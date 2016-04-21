@@ -1,1 +1,1 @@
-module.exports = require("./connector");
+module.exports = require('./lib/mandrill');
