@@ -14,7 +14,7 @@ var settings;
 function SESConnector(_settings) {
     console.log("Connector connecting", _settings);
 
-    assert(typeof settings === 'object', 'cannot init connector without settings');
+    assert(typeof _settings === 'object', 'cannot init connector without settings');
 
     settings = _settings;
 
