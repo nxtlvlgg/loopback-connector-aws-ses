@@ -22,7 +22,7 @@ function SESConnector(_settings) {
         return;
     }
 
-    getConnection();
+    return getConnection();
 }
 
 
