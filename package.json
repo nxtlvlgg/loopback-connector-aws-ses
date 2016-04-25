@@ -1,0 +1,25 @@
+{
+  "name": "loopback-connector-aws-ses",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nxtlvlgg/loopback-connector-aws-ses.git"
+  },
+  "author": "Josh Elias",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nxtlvlgg/loopback-connector-aws-ses/issues"
+  },
+  "homepage": "https://github.com/nxtlvlgg/loopback-connector-aws-ses#readme",
+  "dependencies": {
+    "aws-sdk": "^2.3.5",
+    "bluebird": "^3.3.5",
+    "loopback": "^2.27.0",
+    "loopback-datasource-juggler": "^2.46.0"
+  }
+}
