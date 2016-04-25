@@ -12,6 +12,7 @@ var connection;
 var settings;
 
 function SESConnector(_settings) {
+    console.log("Connector connecting", _settings);
 
     assert(typeof settings === 'object', 'cannot init connector without settings');
 
@@ -57,28 +58,6 @@ Mailer.send = function (options, finalCb) {
         });
     }
 
-
-    var params = {
-        Destination: {
-            ToAddresses: [
-                "joe.oshawa2@gmail.com"
-            ]
-        },
-        Message: {
-            Body: {
-                Html: {
-                    Data: "WOOOOO HTML"
-                },
-                Text: {
-                    Data: "WOOO Text"
-                }
-            },
-            Subject: {
-                Data: "subjecteddddd"
-            }
-        },
-        Source: "admin@tempostorm.com"
-    };
     return connection.sendEmail(options, function(err, data) {
         if (err) return finalCb(err);
 
