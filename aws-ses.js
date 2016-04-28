@@ -60,7 +60,6 @@ Mailer.send = function (options, finalCb) {
     return connection.sendEmail(options, function(err, data) {
         if (err) return finalCb(err);
 
-        console.log("successfully sent mail maybe?", data);
         return finalCb();
     });
 };
